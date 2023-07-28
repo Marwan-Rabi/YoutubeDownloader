@@ -1,7 +1,5 @@
 #importing files
 from pytube import YouTube
-import cv2
-
 #input video link and Path
 Vlink = input("Enter Video Link: ")
 VPAth  = input("Enter The Path of The Download")
@@ -19,7 +17,6 @@ videoStream = video.streams.get_highest_resolution()
 print("Downloading....")
 videoStream.download(VPAth)
 print("Downloading finished!!")
-cv2.VideoCapture(video.title.mp4)
 #quit
 quit()
 
